@@ -1,0 +1,129 @@
+/* navbar */
+.navbar-default {
+    background-color: #808080;
+    font-family: peaelliebellie;
+    border: 0px;
+    
+}
+/* title */
+.navbar-default .navbar-brand {
+    /*text-shadow: 2px 1px 0 #C3F6DA;*/
+    color: #C3F6DA;
+    font-size: 30px;
+    
+}
+
+/*Hover over title*/
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: #F7A39B;
+    color: #C3F6DA;
+}
+/* link text on navbar*/
+.navbar-default .navbar-nav > li > a {
+    /*text-shadow: 0px 1px 0 #0000;*/
+    color: #C3F6DA;
+    font-size : 20px;
+}
+
+/*Hover over link item*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #F7A39B;
+    color: #C3F6DA;
+}
+
+/*Color of clicked navbar dropdown*/
+.navbar .navbar-nav > li.open > a:hover,
+.navbar .navbar-nav > li.open > a:focus {
+  background-color: #F7A39B;
+  color: #C3F6DA;
+}
+
+.navbar .navbar-nav > li > a:hover{
+    background-color: #F7A39B;
+}
+
+/*Color of menu items when dropdown is clicked*/
+.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #808080;
+    color: #C3F6DA;
+  }
+
+
+/*Dropdown link*/
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+     background-color: #808080;
+    color: #C3F6DA;
+}
+
+/*dropdown link hover color*/
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+     background-color: #F7A39B;
+    color: #C3F6DA;
+}
+
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: black;
+    border-bottom-color: white;
+}
+
+@media only screen and (min-device-width: 1281px)
+{
+#top, #bottom, #left, #right {
+	background: #808080;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 50px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 50px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+}
+
+body {
+    background-color: #C3F6DA;
+}
+
+
+.photocredit{
+    color:white;
+    font-size: 12px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#codycredit{
+    color:white;
+    font-size: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-device-width: 1280px)
+{
+    #codycredit, .photocredit{
+        color: black;
+    }
+}
+
+@font-face {
+    font-family: peaelliebellie;
+    src: url("/common/fonts/peaelliebellie.ttf");
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .mobile-hide{ display: none; }
+}
