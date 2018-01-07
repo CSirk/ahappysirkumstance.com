@@ -2,10 +2,24 @@ body {
     overflow: hidden;
 }
 
+#winniethepoohquote {
+    line-height: 8vh;
+}
+
+#winniethepoohcitation {
+    color: purple;
+}
+
+#winniethepoohquotearea {
+    text-align: right;
+}
+
 @media only screen and (min-device-width: 1281px)
 {
-    #indexcodykristenpicture {
-        max-width: 90vw;
-        max-height: 90vh;
+    #codykristenpicture {
+        position: relative;
+        z-index: -1;
+        bottom: 5vh
+        
     }
 }
