@@ -2,7 +2,9 @@
 .navbar-default {
     background-color: #808080;
     font-family: peaelliebellie;
+    border-color: #808080;
     /*border: 0px;*/
+    margin: 0;
 
 }
 
@@ -85,17 +87,28 @@
 	}
 	#left, #right {
 		top: 0; bottom: 0;
-		width: 50px;
+		width: 5vh;
 		}
 		#left { left: 0; }
 		#right { right: 0; }
 		
 	#top, #bottom {
 		left: 0; right: 0;
-		height: 50px;
+		height: 5vh;
 		}
 		#top { top: 0; }
 		#bottom { bottom: 0; }
+    
+    
+    #ahappysirkumstanceframe {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+    
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 body {
@@ -130,6 +143,10 @@ body {
 @font-face {
     font-family: peaelliebellie;
     src: url("/common/fonts/peaelliebellie.ttf");
+}
+
+body {
+    overflow-x: hidden;
 }
 
 @media only screen and (max-device-width: 1280px) {

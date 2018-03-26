@@ -1,0 +1,33 @@
+.panel-default > .panel-heading{
+    color:white;
+    background-color: #808080;
+}
+
+.panel-group .panel-heading {
+    color: white;
+    background-color: #808080;
+}
+
+.panel-title {
+    color: #F7A39B;
+    font-size: 26px;
+    text-align: center;
+}
+
+.panel-body {
+    overflow-y: scroll;
+    max-height: 50vh;
+    font-size: 16px;
+}
+/*END PANELS*/
+
+
+#aboutus {
+    margin: 0 auto;
+    max-width: 80vw;
+    margin-top: 5vh;
+}
+
+#whoiskristenimage {
+    max-width: 25vw;
+}

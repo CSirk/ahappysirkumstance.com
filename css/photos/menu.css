@@ -1,20 +1,42 @@
-body {
-    overflow: hidden;
-}
 
 #phototextlinks {
     text-align: center;
 }
 
+body {
+        overflow-y: scoll;
+
+    }
+
 @media only screen and (min-device-width: 1281px)
 {
-    #codykristenpicture {
+
+    #codykristenengagementdayphoto{
         position: relative;
         z-index: -1;
         
         max-height: 75vh;
         display: block;
         margin: auto;
+    }
+    
+    #codykristenpicture {
+        position: relative;
+        z-index: -1;
+        
+        max-height: 75vh;
+
+        display: block;
+        margin: auto;
+        
+    }
+}
+
+@media only screen and (max-device-width: 1280px)
+{
+    
+    #codykristenpicture {
+        max-width: 100%;
         
     }
 }
