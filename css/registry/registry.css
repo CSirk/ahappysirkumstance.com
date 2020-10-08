@@ -1,18 +1,57 @@
 
-#logo{
-    max-height: 18vh;
-    margin: 6vh;
-}
+
 
 #registrytext {
     margin-top: 6vh;
 }
+
+
+#codykristenpicturearea {
+    overflow: hidden;
+}
+
 
 @media only screen and (min-device-width: 1281px)
 {
     #codykristenpicture {
         position: relative;
         z-index: -1;
-        max-width: 70vw;
+        float: right;
     }
+    
+    #logo{
+    max-height: 18vh;
+        margin: 4vh;
+    }
+    
+     #rightRFrame {
+        overflow-y: hidden;
+         overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) and (min-device-width: 1281px)
+{
+    #codykristenpicture {
+        bottom: 15vh;
+        left: 10vw;
+    }
+}
+
+@media only screen and (max-device-width: 1280px)
+{
+    #codykristenpicture {
+        max-width: 100%;
+    }
+    
+    #logo{
+    max-width: 100%;
+    margin-top: 6vh;
+    text-align: center;
+    }
+    
+    #registrytext {
+        text-align: center;
+    }
+    
 }

@@ -1,0 +1,42 @@
+body {
+    overflow-y: auto;
+}
+
+#informationtext {
+    line-height: 8vh;
+}
+
+#codykristenpicturearea {
+    overflow: hidden;
+}
+
+@media only screen and (min-device-width: 1281px)
+{
+    
+#informationtextarea {
+    text-align: right;
+}
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    #codykristenpicture {
+        position: relative;
+        z-index: -1;
+        bottom: 15vh;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 1280px)
+{
+    h1 {
+        font-size: 30px;
+    }
+
+    #codykristenpicture {
+        max-width: 100%;
+        
+    }
+}

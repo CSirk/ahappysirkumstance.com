@@ -31,3 +31,31 @@
 #whoiskristenimage {
     max-width: 25vw;
 }
+
+body {
+    background-image: url("/images/weddingparty/thebrideandgroom/backgroundkandc.JPG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.panel-body {
+    background-color: #C3F6DA;
+    text-align: center;
+    font-size: 30px;
+}
+
+.panelFrameArea {
+        max-height: 80vh;
+        overflow: scroll;
+}
+
+p {
+    font-size: 30px;
+}
+
+@media only screen and (max-device-width: 1281px)
+{
+    p {
+        font-size: 24px;
+    }
+}

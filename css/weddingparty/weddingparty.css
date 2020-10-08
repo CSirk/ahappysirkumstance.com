@@ -1,0 +1,67 @@
+.nav-tabs {
+    border-bottom: 0;
+}
+
+@media only screen and (min-device-width: 1281px)
+{
+    #groomparty {
+        overflow-y: hidden;
+    }
+
+    .nav-tabs > li {
+        float:none;
+        display:inline-block;
+        zoom:1;
+    }
+
+    #leftWpFrame {
+        margin-left: 5vw;
+        max-height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #rightWpFrame {
+        max-height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .nav-tabs{
+        text-align: center;
+    }
+
+    .tab-content {
+        text-align: center;
+    }
+
+    #groomparty {
+        overflow-y: scroll;
+    }
+
+    h2 {
+        
+        text-align: center;
+    }
+    
+    .partyImage {
+        height: 100%;
+        max-width: 100%;
+    }
+    
+    h2 {
+    font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-device-width: 1280px)
+{
+    h2 {
+        font-size: 30px;
+    }
+
+    .partyImage {
+        max-width: 100%;
+    }
+}

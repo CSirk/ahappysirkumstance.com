@@ -1,3 +1,10 @@
+/*Font */
+@font-face {
+    font-family: peaelliebellie;
+    src: url("/common/fonts/peaelliebellie.ttf");
+}
+
+
 /* navbar */
 .navbar-default {
     background-color: #808080;
@@ -79,41 +86,12 @@
     border-bottom-color: white;
 }
 
-@media only screen and (min-device-width: 1281px)
-{
-#top, #bottom, #left, #right {
-	background: #808080;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 5vh;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 5vh;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
-    
-    
-    #ahappysirkumstanceframe {
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-    
-    .container-fluid {
-        margin: 0;
-        padding: 0;
-    }
-}
+
 
 body {
     font-family: peaelliebellie;
     background-color: #C3F6DA;
+    overflow: hidden;
 }
 
 
@@ -125,30 +103,93 @@ body {
     bottom: 0;
 }
 
-#codycredit{
-    color:white;
-    font-size: 12px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+
+
+/* Only Show on screens 1281 px and above */
+@media only screen and (min-device-width: 1281px)
+{
+#top, #bottom, #left, #right {
+	background: #808080;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 2.5vw;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 2.5vw;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+    
+    
+    #frameArea {
+        margin-left: 4vh;
+        margin-right: 5vh;
+        max-height: 90vh;
+        overflow: hidden;
+    }
+    
+    #rightFrame {
+        max-height: 86vh;
+        overflow-x: hidden;
+    }
+    
+    #leftFrame {
+        max-height: 88vh;
+    }
+    
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .non-mobile-hide {
+        display: none;
+    }
+    
+    /* Scroll bars */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #F7A39B; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
 }
 
+/* Only Show on screens 1280px and below */
 @media only screen and (max-device-width: 1280px)
 {
     #codycredit, .photocredit{
         color: black;
     }
-}
+  
+    .mobile-hide{ display: none; }
+    
+    body {
+        overflow-y: scroll;
+    }
+    
+    #rightFrame {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 
-@font-face {
-    font-family: peaelliebellie;
-    src: url("/common/fonts/peaelliebellie.ttf");
-}
-
-body {
-    overflow-x: hidden;
-}
-
-@media only screen and (max-device-width: 1280px) {
-  .mobile-hide{ display: none; }
 }

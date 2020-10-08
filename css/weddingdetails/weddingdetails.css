@@ -1,26 +1,38 @@
-body {
+
+
+
+#codykristenpicturearea {
     overflow: hidden;
 }
 
-#winniethepoohquote {
-    line-height: 8vh;
-}
-
-#winniethepoohcitation {
-    color: purple;
-}
-
-#winniethepoohquotearea {
-    text-align: right;
-}
 
 @media only screen and (min-device-width: 1281px)
 {
+    #rightDFrame {
+        max-height: 86vh;
+    }
+    
+    #weddingdetailsarea {
+
+        text-align: center;
+    }
+    
     #codykristenpicture {
         position: relative;
         z-index: -1;
         bottom: 25vh;
-        max-height: 70vw;
-        
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 1280px)
+{
+    #codykristenpicture {
+        max-width: 100%;
+    }
+    
+    
+    #weddingdetailsarea {
+        text-align: center;
     }
 }

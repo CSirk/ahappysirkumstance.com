@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 #winniethepoohquote {
@@ -10,16 +10,52 @@ body {
     color: purple;
 }
 
+#codykristenpicturearea {
+    overflow: hidden;
+}
+
+@media only screen and (min-device-width: 1367px)
+{
+    
 #winniethepoohquotearea {
     text-align: right;
 }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
 
-@media only screen and (min-device-width: 1281px)
+    
+    #codykristenpicture {
+        position: relative;
+        z-index: -1;
+        bottom: 8vh;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) and (min-device-width: 1281px)
 {
     #codykristenpicture {
         position: relative;
         z-index: -1;
-        bottom: 5vh
+        bottom: 30vh;
+        right: 10vw;
+    }
+    
+    #winniethepoohquotearea {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-device-width: 1280px)
+{
+    h1 {
+        font-size: 30px;
+    }
+
+    #codykristenpicture {
+        max-width: 100%;
         
     }
 }
